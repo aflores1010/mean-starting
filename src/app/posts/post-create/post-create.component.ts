@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 
   @Component({
+    selector: 'app-post-create',
     templateUrl: './post-create.component.html',
-    selector: 'app-post-create'
+    styleUrls: ['./post-create.component.css']
   })
   export class PostCreateComponent {
 
