@@ -22,10 +22,13 @@ import { PostService } from '../post.service';
         return;
       }
       const post: PostInterface = {
+        id: '',
         title: form.value.title,
         text: form.value.text
       };
       this.postService.addPost(post);
+      form.resetForm();
+
     }
 
   }

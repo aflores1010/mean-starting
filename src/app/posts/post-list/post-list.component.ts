@@ -31,7 +31,7 @@ import { Subscription } from '../../../../node_modules/rxjs';
 
 
   ngOnInit() {
-    this.posts = this.postService.getPosts();
+     this.posts = this.postService.getPosts();
     this.postSub = this.postService.getPostUpdated()
       .subscribe((posts: PostInterface[]) => {
           this.posts = posts;
